@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/ayuda.css' %}">
 </head>
 <body>
     <header></header>
     <div class="main-buscador">
         <h2>¿Cómo podemos ayudarte?</h2>
-        <img src="/Imágenes/buscador.png" alt="" style="width: 3.0rem; height: 3.0rem;">
+        <img src="{% static 'assets/img/buscador.png' %}" alt="" style="width: 3.0rem; height: 3.0rem;">
         <input type="search" style="border: 2px solid black; width: 20vw; height: 5vh"/>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Estado de mi reserva</h4>
             <a href="#reserva">
-            <img src="/Imágenes/reserva.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/reserva.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Medios de pago</h4>
             <a href="#tarjetas">
-            <img src="/Imágenes/tarjeta-de-debito.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/tarjeta-de-debito.png' %}"alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Cambios y devoluciones</h4>
             <a href="#cambios">
-            <img src="/Imágenes/cambiar.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/cambiar.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Inconvenientes en destino</h4>
             <a href="#pasaporte">
-            <img src="/Imágenes/problemas.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/problemas.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
     </div>
     <main class="main-ayuda">
         <div class="main-container">
             <aside class="main-aside">
-                <img src="/Imágenes/avioncitogif.webp" alt="" style="width: 100%; height: 100%;">
+                <img src="{% static 'assets/img/avioncitogif.webp' %}" alt="" style="width: 100%; height: 100%;">
             </aside>
             
             <section class="main-section">
             <div class="section-container">
                 <div class="div-preguntas">
                     <h3>¿Cómo comprar?</h3>
-                    <img src="/Imágenes/carrito.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/carrito.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div>
                         <ul>
@@ -62,43 +63,43 @@
             <div class="section-container">
                 <div id="tarjetas" class="div-preguntas">
                     <h3>¿Qué medios de pago aceptamos?</h3>
-                    <img src="/Imágenes/tarjeta-de-debito.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/tarjeta-de-debito.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                 <div class="logosMediosdePago">
-                        <div><img src="/Imágenes/logoVisa.png" alt=""></div>
-                        <div><img src="/Imágenes/logoMastercard.png" alt=""></div>
-                        <div><img src="/Imágenes/logoMastercardDebit.jpg" alt=""></div>
-                        <div><img src="/Imágenes/logoMaestro.png" alt=""></div>
-                        <div><img src="/Imágenes/logoAmex.png" alt=""></div>
-                        <div><img src="/Imágenes/logoCabal.jpg" alt=""></div>
-                        <div><img src="/Imágenes/logoCabalDebito.jpg" alt=""></div>
-                        <div><img src="/Imágenes/logoCabalDebito.jpg" alt=""></div>
-                        <div><img src="/Imágenes/logoNaranjaX.png" alt=""></div>
-                        <div><img src="/Imágenes/logoNativa.png" alt=""></div>
-                        <div><img src="/Imágenes/logoArgencard.png" alt=""></div>
-                        <div><img src="/Imágenes/logoCencosud.png" alt=""></div>
-                        <div><img src="/Imágenes/logoDinners.jpg" alt=""></div>
-                        <div><img src="/Imágenes/logoMercadoPago.png" alt=""></div>
-                        <div><img src="/Imágenes/logoPayU.png" alt=""></div>
-                        <div><img src="/Imágenes/logoPagoMisCuentas.png" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoVisa.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoMastercard.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoMastercardDebit.jpg' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoMaestro.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoAmex.png' %}"alt=""></div>
+                        <div><img src="{% static 'assets/img/logoCabal.jpg' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoCabalDebito.jpg' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoCabalDebito.jpg' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoNaranjaX.png' %}"alt=""></div>
+                        <div><img src="{% static 'assets/img/logoNativa.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoArgencard.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoCencosud.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoDinners.jpg' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoMercadoPago.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoPayU.png' %}" alt=""></div>
+                        <div><img src="{% static 'assets/img/logoPagoMisCuentas.png' %}" alt=""></div>
                 </div>
             </div>    
             <div class="section-container">
                 <div class="div-preguntas">
                     <h3>¿Promociones bancarias?</h3>
-                    <img src="/Imágenes/promociones.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/promociones.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                 <div class="logosMediosdePago">
-                    <div><img src="/Imágenes/logoAhora3.png" alt=""></div>
-                    <div><img src="/Imágenes/logoAhora6.png" alt=""></div>
-                    <div><img src="/Imágenes/logoAhora12.png" alt=""></div>
-                    <div><img src="/Imágenes/logoAhora18.png" alt=""></div>
+                    <div><img src="{% static 'assets/img/logoAhora3.png' %}" alt=""></div>
+                    <div><img src="{% static 'assets/img/logoAhora6.png' %}" alt=""></div>
+                    <div><img src="{% static 'assets/img/logoAhora12.png' %}" alt=""></div>
+                    <div><img src="{% static 'assets/img/logoAhora18.png' %}" alt=""></div>
                 </div>               
             </div>
             <div class="section-container">
                 <div id="cambios" class="div-preguntas">
                     <h3>¿Cómo solicitar un cambio?</h3>
-                    <img src="/Imágenes/cambiar.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/cambiar.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div class="div-respuestas">
                         <ul>
@@ -115,7 +116,7 @@
             <div class="section-container">
                 <div class="div-preguntas">
                     <h3>¿Como solicitar un reintegro?</h3>
-                    <img src="/Imágenes/devolucion-de-dinero.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/devolucion-de-dinero.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div class="div-respuestas">
                         <ul>¿Como solicitar un reintegro?
@@ -129,7 +130,7 @@
             <div class="section-container">
                 <div id="reserva" class="div-preguntas">
                     <h3>¿Estado de mi reserva?</h3>
-                    <img src="/Imágenes/reserva.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/reserva.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div class="div-respuestas">
                         <ul>
@@ -144,7 +145,7 @@
             <div class="section-container">
                 <div class="div-preguntas">
                     <h3 id="pasaporte">Inconvenientes en destino</h3>
-                    <img src="/Imágenes/problemas.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/problemas.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div class="div-respuestas">
                         <ul>
@@ -157,7 +158,7 @@
             <div class="section-container">
                 <div class="div-preguntas">
                     <h3>Información útil para tu viaje</h3>
-                    <img src="/Imágenes/expediente.png" alt="" style="width: 3.0rem;">
+                    <img src="{% static 'assets/img/expediente.png' %}" alt="" style="width: 3.0rem;">
                 </div>
                     <div class="div-respuestas">
                         <ul>

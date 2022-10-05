@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldWide Travels</title>
-    <link rel="stylesheet" href="Styles.css">
-
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <link href="{% static 'css/Styles.css' %}" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,8 +31,8 @@
 
     <section id="panel-ofertas">
         <div class="container">
-            <h2>Nuestras Ofertas por Tiempo Limitado</h2>
-               <div class="promo">
+            <h2>Nuestras <span class="resaltadorprimario"> Ofertas por Tiempo</span></span><span class="resaltador"> Limitado</span></h2>
+               <div class="promociones">
                   <div class="oferta">
                       <h3>Isla Mucura-CO</h3>
                       <button type="button">Comprar ya!</button>
@@ -64,7 +65,7 @@
             <p>Nuestras Redes Sociales</p>
             <img src="">
             <img src="">
-            <p>&copy, WorldWide Travel</p>
+            <ul> &copy  WorldWide Travel </ul>
         </div>    
     </footer>
 </body>
