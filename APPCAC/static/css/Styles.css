@@ -94,7 +94,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url ("/static/assets/img/portada.jpg");
+    ,url("/static/assets/img/portada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -154,7 +154,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("assets/img/namucuraCO.jpg");
+    ,url("/static/assets/img/namucuraCO.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -167,7 +167,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("assets/img/riveramayaMX.jpg");
+    ,url("/static/assets/img/riveramayaMX.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -180,7 +180,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("assets/img/OletariverUS.png");
+    ,url("/static/assets/img/OletariverUS.png");
     background-size: cover;
     background-position: center center;
 }
@@ -194,7 +194,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("assets/img/sessalinesEU.jpg");
+    ,url("/static/assets/img/sessalinesEU.jpg");
     background-size: cover;
     background-position: center center;
 }
