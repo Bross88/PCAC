@@ -7,9 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda</title>
     <link rel="stylesheet" href="{% static 'css/ayuda.css' %}">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="container">
+            <p class="title">WORLDWIDE TRAVELS</p>
+            <nav>
+                <a href="{% url 'Index' %}">Home</a>
+                <a href="#foot">Sobre Nosotros</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="#foot">Contacto</a>
+                
+            </nav>
+        </div>
+    </header>
     <div class="main-buscador">
         <h2>¿Cómo podemos ayudarte?</h2>
         <img src="{% static 'assets/img/buscador.png' %}" alt="" style="width: 3.0rem; height: 3.0rem;">
@@ -170,11 +182,26 @@
 
                     </div> 
                                 
-            </div>
-            
+            </div>            
             </section>
         </div>
     </main>
-    <footer></footer>
+    <footer id="foot">
+        <div class="container">
+            
+            <p>Nuestras Redes Sociales</p>
+            <div class="img-container">
+                <a href="{% url 'APPCACAboutus' %}" target="_blank">
+                    <img class="about-btn" alt="" src="{% static 'assets/img/aboutbtn.jpg' %}"/>
+                <a href="https://wa.me/541168176276?text=Bienvenido%20a%20WorldWide%20Travels%20un%20asesor%20lo%20atendera%20pronto." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Bross88/PCAC" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <h5> &copy  WorldWide Travel </h5>
+            
+        </div>    
+    </footer>
 </body>
 </html>

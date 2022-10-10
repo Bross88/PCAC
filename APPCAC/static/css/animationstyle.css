@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ola{
+    position: relative;
+}
+.ola2{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    background-color: blue;
+    border: 5px solid rgb(203, 18, 18);
+    width: 1230px;
+    height: 700px;
+}
+.circle{
+    position: relative;
+    top: 0px;
+    left: 0px;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.circle2{
+    position: relative;
+    bottom: 0;
+    left: 0;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.circle3{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.circle4{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes circle{
+
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(100%);
+        background-color: blue;
+    }
+    20%{
+        transform: translateX(200%);
+        background-color: rgb(174, 30, 71);
+    }
+    30%{
+        transform: translateX(300%);
+        background-color: rgb(50, 140, 40);
+    }
+    40%{
+        transform: translateX(400%)translateY(100%);
+        background-color: rgb(184, 213, 41);
+    }
+    50%{
+        transform: translateY(200%);
+        background-color: rgb(212, 32, 191);
+    }
+    60%{
+        transform: translateY(300%);
+        background-color: rgb(15, 96, 119);
+    }
+    70%{
+        transform: translateY(400%);
+        background-color: rgb(196, 105, 66);
+    }
+    80%{
+        transform: translateY(500%);
+        background-color: rgb(249, 16, 16);
+    }
+    90%{
+        transform: translateX(500%);
+        background-color: rgb(200, 188, 199);
+    }
+    100%{
+        transform: translateX(550%);
+        background-color: rgb(9, 4, 8);
+    }
+}  
+
+
+

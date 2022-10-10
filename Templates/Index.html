@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    {% load static %}
+    {% load static %} 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorldWide Travels</title>
+    {% block title %} <title>WorldWide Travels</title> {% endblock %}
     <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
     <link href="{% static 'css/Styles.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <p class="title">WORLDWIDE TRAVELS</p>
+            <p class="title animate__animated animate__flash">WORLDWIDE TRAVELS</p>
             <nav>
-                <a href="sobre_nosotros.html">Sobre Nosotros</a>
-                <a href="destinos.html">Destinos</a>
-                <a href="Contactenos.html">Contacto</a>
+                <a href="#PRINCIPAL">Home</a>
+                <a href="#foot">Sobre Nosotros</a>
+                <a href="{% url 'APPCACAnimation' %}">Destinos</a>
+                <a href="#foot">Contacto</a>
                 <a href="{% url 'APPCACfrecuentes' %}">Preguntas Frecuentes</a>
             </nav>
         </div>
     </header>
-
+    {% block content %}
     <section id="PRINCIPAL">
-        <h1>Los Mejores Destinos en un Solo Lugar</h1>
+        <h1 class="animate__animated animate__heartBeat">Los Mejores Destinos en un Solo Lugar</h1>
         <h3>Conocelos Aqui: </h3>
         <button type="button">Ver Destinos</button>
     </section>
@@ -32,11 +35,11 @@
 
     <section id="panel-ofertas">
         <div class="container">
-            <h2>Nuestras <span class="resaltadorprimario"> Ofertas por Tiempo</span></span><span class="resaltador"> Limitado</span></h2>
+            <h2>Nuestras <span class="resaltadorprimario"> Ofertas por Tiempo</span></span><span class="resaltador"> Limitado 50 % OFF</span></h2>
                <div class="promociones">
                   <div class="oferta">
-                      <h3>Isla Mucura-CO</h3>
-                      <button type="button">Comprar ya!</button>
+                    <h3>Isla Mucura-CO</h3>
+                    <button type="button">Comprar ya!</button>
                   </div>
                   <div class="oferta">
                     <h3>Rivera Maya-MX</h3>
@@ -54,19 +57,44 @@
         </div>
     </section>
 
-
-
-    //Aca podria ir una section para nuestros auspuciantes o partners//
-
-
-
-    <footer>
+    <div class "I-frame">
+        <ul>
+            <li><a href="https://www.youtube.com/embed/mNZMZe2vn78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target= "iframe-video">Oleta River</a></li>
+            <li><a href="https://www.youtube.com/embed/g1cdRpK4ZQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target= "iframe-video">Isla Mucura</a></li> 
+            <li><a href="https://www.youtube.com/embed/vyaGmd6n-bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target= "iframe-video">Rivera Maya</a></li> 
+            <li><a href="https://www.youtube.com/embed/F1-SEnBD5sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target= "iframe-video">Ses Salines</a></li>
+        </ul>
+        <iframe name="iframe-video" width="100%" height="600" src="https://www.youtube.com/embed/mNZMZe2vn78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+    </div>
+        
+    <div class="container-partner">
+            <h2> In Association With:</h2>
+        <div class="partner">
+                <img alt="" src="{% static 'assets/img/googlepartner.jpg' %}"/>
+                <img alt="" src="{% static 'assets/img/interp.jpg' %}"/>
+                <img alt="" src="{% static 'assets/img/travelp.jpg' %}"/>
+                <img alt="" src="{% static 'assets/img/virtuoso.jpg' %}"/>
+                <img alt="" src="{% static 'assets/img/vitrup.jpg' %}"/>
+                
+        </div>
+    </div>
+    
+{% endblock %}
+    <footer id="foot">
         <div class="container">
-            <p>Privacy Policies</p>
+            
             <p>Nuestras Redes Sociales</p>
-            <img src="">
-            <img src="">
-            <ul> &copy  WorldWide Travel </ul>
+            <div class="img-container">
+                <a href="{% url 'APPCACAboutus' %}" target="_blank">
+                    <img class="about-btn" alt="" src="{% static 'assets/img/aboutbtn.jpg' %}"/>
+                <a href="https://wa.me/541168176276?text=Bienvenido%20a%20WorldWide%20Travels%20un%20asesor%20lo%20atendera%20pronto." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Bross88/PCAC" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <h5> &copy  WorldWide Travel </h5>
+            
         </div>    
     </footer>
 </body>

@@ -45,14 +45,14 @@ button:hover{
 }
 
 header{
-    background-color: rgb(37, 39, 39);
+    background-color: rgb(249, 250, 250);
 }
 
 header .title{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: rgb(215, 228, 228);
+    color: rgb(9, 10, 10);
     font-size: 3em;
 }
 
@@ -126,6 +126,9 @@ header a:hover{
 
 #panel-ofertas p{
     display: none;
+}
+#panel-ofertas h5{
+    font-size: larger;
 
 }
 
@@ -149,12 +152,7 @@ header a:hover{
 }
 
 .oferta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/static/assets/img/namucuraCO.jpg");
+    background-image:url("/static/assets/img/namucuraCO.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -162,12 +160,7 @@ header a:hover{
 
 
 .oferta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/static/assets/img/riveramayaMX.jpg");
+    background-image:url("/static/assets/img/riveramayaMX.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -175,12 +168,7 @@ header a:hover{
 
 
 .oferta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/static/assets/img/OletariverUS.png");
+    background-image:url("/static/assets/img/OletariverUS.png");
     background-size: cover;
     background-position: center center;
 }
@@ -189,12 +177,7 @@ header a:hover{
 
 
 .oferta:nth-child(4){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/static/assets/img/sessalinesEU.jpg");
+    background-image:url("/static/assets/img/sessalinesEU.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -206,22 +189,121 @@ footer {
 
 footer .container{
     color: rgb(230, 237, 243);
-    height: 120px;
+    height: 250px;
+    
+
    
     
 }
 
 footer p{
     text-align: center;
-    color: rgb(211, 206, 216);
+    color: rgb(249, 249, 248);
 }
+footer h5{
+    text-align: center;
+    color: rgb(249, 249, 248);
+    font-size: 25px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 footer ul{
-    text-align: right;
-    color: rgb(11, 5, 16);
+    text-align: center;
+    color: lemonchiffon;
     list-style: none;
+    text-decoration: none;
+    font-size: larger;
 }
 
+.about-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+.fa-twitter{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(65, 233, 236);
+    
+    
+}
+.fa-github{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(171, 167, 167);
+}
+.fa-facebook-f{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(23, 23, 243);
+}
+.fa-whatsapp{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(20, 201, 53);
+}
+.fa-envelope{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(247, 248, 248);
+}
 
+.container-partner{
+    background-image:url("/static/assets/img/fondopartners.jpg");
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+
+}
+
+.partner{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 350px;
+
+}
+
+.partner img{
+    width: 120px;
+    height: 120px;
+    
+}
+
+ul{
+    background-color: fff;
+    list-style-type: scuare;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+#imgf{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+}
+.btn-back{
+    font-size: larger;
+    color: aqua;
+    font-size: 40px;
+
+}
+.tit-nos{
+    font-size: 60px;
+    color: rgb(231, 219, 115);
+}
 
 @media (min-width: 768px){
     header{
