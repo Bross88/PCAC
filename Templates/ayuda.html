@@ -22,10 +22,10 @@
             </nav>
         </div>
     </header>
-    <div class="main-buscador" style="background-image: url(/PCAC/APPCAC/static/assets/img/rivera_maya.png) ;">
+    <div class="main-buscador" style="background-image: url("{% static 'assets/img/rivera_maya.png' %}");">
         <h2>¿Cómo podemos ayudarte?</h2>
         <img src="{% static 'assets/img/buscador.png' %}" alt="" style="width: 3.0rem; height: 3.0rem;">
-        <input type="search"/>
+        <input type="search" placeholder="Escribe una palabra solo lo que buscas..."/>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Estado de mi reserva</h4>
             <a href="#reserva">
