@@ -36,7 +36,8 @@ body, header, main, footer  {
 }
 
 .div-respuestas {
-    
+    border-top: 2px grey solid;
+    width: 40%;
     text-align: left;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
