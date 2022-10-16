@@ -11,6 +11,7 @@ body, header, main, footer  {
 }
 
 .main-buscador {
+    background-image: url(/PCAC/APPCAC/static/assets/img/hotel.jpg);
     border: 2px black solid;
     margin: 0.5rem;
     display: flex;
@@ -19,6 +20,19 @@ body, header, main, footer  {
     padding: 0.5rem;
     align-items: center;
     
+}
+
+.main-buscador h2,h4 {
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input{
+    border: 2px solid black;
+    width: 20vw;
+    height: 5vh;
 }
 
 .div-Ayuda{
@@ -31,12 +45,14 @@ body, header, main, footer  {
     
 }
 .div-preguntas {
-    
+    border-top: 2px grey solid;
     text-align: center;
+    width: 40%;
 }
 
 .div-respuestas {
-    
+    border-top: 2px grey solid;
+    width: 40%;
     text-align: left;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -45,7 +61,7 @@ body, header, main, footer  {
 
 .main-aside{
     width: 30%;
-    
+    margin: 8px;
     
 }
 
@@ -125,10 +141,6 @@ footer {
 footer .container{
     color: rgb(230, 237, 243);
     height: 250px;
-    
-
-   
-    
 }
 
 footer p{
@@ -191,3 +203,20 @@ footer ul{
     border-radius: 15px;
     color: rgb(247, 248, 248);
 }
+/* CSS MOBILE*/
+
+@media screen and (max-width: 640px) {
+
+.main-aside,.div-Ayuda {display: none;}
+.main-buscador {flex-direction: column;}
+input {width:50vw;}
+.logosMediosdePago img {width: 3.0rem;}
+}
+/* CSS TABLET*/
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .div-Ayuda {display: none;}
+    h2 {font-size:35px;}    
+    input {width:50vw;}
+        
+    }
