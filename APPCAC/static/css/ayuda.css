@@ -22,7 +22,11 @@ body, header, main, footer  {
 }
 
 .main-buscador h2,h4 {
+    background-image: url(/PCAC/APPCAC/static/assets/img/hotel.jpg);
+    font-size: 25px;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 input{
@@ -57,7 +61,7 @@ input{
 
 .main-aside{
     width: 30%;
-    
+    margin: 8px;
     
 }
 
@@ -137,10 +141,6 @@ footer {
 footer .container{
     color: rgb(230, 237, 243);
     height: 250px;
-    
-
-   
-    
 }
 
 footer p{
