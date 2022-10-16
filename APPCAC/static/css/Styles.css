@@ -174,8 +174,6 @@ header a:hover{
 }
 
 
-
-
 .oferta:nth-child(4){
     background-image:url("/static/assets/img/sessalinesEU.jpg");
     background-size: cover;
@@ -289,11 +287,7 @@ ul{
     font-size: 40px;
 }
 
-#imgf{
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 30px;
-}
+
 .btn-back{
     font-size: larger;
     color: aqua;
@@ -305,21 +299,47 @@ ul{
     color: rgb(231, 219, 115);
 }
 
-@media (min-width: 768px){
+
+@media (min-width: 660px){
+    .container-partner{
+        background-image: none;
+        
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        font-size: 1em;
+    
+    }
+    
+
+}
+
+@media (min-width: 800px){
     header{
         position: fixed;
         width: 100%;
 
     }
+    .container-partner{
+        background-image:url("/static/assets/img/fondopartners.jpg");
+        width: 100%;
+        height: 600px;
+        padding: 50px;
+    
+    }
     
     header .container{
         flex-direction: row;
         justify-content: space-between;
+        justify-content: center;
     }
      header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
+        display: flex;
+        justify-content: end;
+        
+        
+        
+        
      }
 
      #panel-ofertas .promociones{
@@ -332,8 +352,78 @@ ul{
 
     }
     #panel-ofertas .oferta{
-        padding: 80px;
+        padding: 20px;
             
     }
+  
 }  
 
+
+
+
+
+
+@media (min-width: 340px){
+    ul{
+        background-color: fff;
+        list-style-type: scuare;
+        font-size: 1em;
+    }
+    .partner img{
+        width: 4em;
+        height: 4em;
+        
+    }
+    .container-partner{
+        background-color: aliceblue;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        font-size: 1em;
+    
+    }
+    .partner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-btn{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+    }
+    .fa-twitter{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+        color: rgb(65, 233, 236);
+        
+        
+    }
+    .fa-github{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+        color: rgb(171, 167, 167);
+    }
+    .fa-facebook-f{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+        color: rgb(23, 23, 243);
+    }
+    .fa-whatsapp{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+        color: rgb(20, 201, 53);
+    }
+    .fa-envelope{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 15px;
+        color: rgb(247, 248, 248);
+    }
+
+
+}
