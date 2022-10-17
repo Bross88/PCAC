@@ -11,7 +11,7 @@ body, header, main, footer  {
 }
 
 .main-buscador {
-    background-image: url(/PCAC/APPCAC/static/assets/img/hotel.jpg);
+    background-image: url("/static/assets/img/hotel.jpg");
     border: 2px black solid;
     margin: 0.5rem;
     display: flex;
