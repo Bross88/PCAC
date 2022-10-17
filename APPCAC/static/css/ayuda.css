@@ -11,8 +11,6 @@ body, header, main, footer  {
 }
 
 .main-buscador {
-    background-image: url("/static/assets/img/hotel.jpg");
-    border: 2px black solid;
     margin: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -27,6 +25,12 @@ body, header, main, footer  {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.main-buscador img:hover{
+    animation-name: asideImagenesRotationIzq;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 input{
@@ -62,7 +66,29 @@ input{
 .main-aside{
     width: 30%;
     margin: 8px;
-    
+    flex-direction: row;
+}
+
+
+
+.playa_1 {
+    border-radius: 5%;
+    width: 100%;
+    display: block;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationIzq;
+    animation-duration: 2s,3s,2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.playa_2 {
+    border-radius: 5%;
+    width: 100%;
+    display: block;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationDer;
+    animation-duration: 2s,3s,2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .section-container {
@@ -220,3 +246,43 @@ input {width:50vw;}
     input {width:50vw;}
         
     }
+    @keyframes asideImagenesOpacidad{
+         from{
+            opacity: 0;
+         }
+         to{
+            opacity: 1;
+         }
+
+    }
+
+    @keyframes asideImagenesSlidein {
+        from {
+          margin-right: 0%;
+        }
+      
+        to {
+          margin-left: 30%;
+
+        }
+      }
+      @keyframes asideImagenesRotationIzq {
+        from {
+          transform: rotate(10deg);
+        }
+      
+        to {
+          transform: rotate(-10deg);
+
+        }
+      }
+      @keyframes asideImagenesRotationDer {
+        from {
+          transform: rotate(-10deg);
+        }
+      
+        to {
+          transform: rotate(10deg);
+
+        }
+      }
