@@ -11,6 +11,7 @@ body, header, main, footer  {
 }
 
 .main-buscador {
+    border-radius: 1.0rem;
     margin: 0.5rem;
     display: flex;
     flex-direction: row;
