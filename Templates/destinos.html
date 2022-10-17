@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Turísticos</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.ico" />
+    <link href="/static/css/Styles.css" rel="stylesheet">
+    <link href="/static/css/destinos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#PRINCIPAL">Home</a>
+                <a href="#foot">Sobre Nosotros</a>
+                <a href="{% url 'APPCACAnimation' %}">Destinos</a>
+                <a href="#foot">Contacto</a>
+                <a href="{% url 'APPCACfrecuentes' %}">Preguntas Frecuentes</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container2">
+        <div class="layoutDestinos">
+            <div class="destino">
+                <h3 class="titulo">Isla Mucura</h3>
+                <p class="p">Esta isla es un verdadero tesoro colombiano que cuenta con buena comida, alojamiento, fácil acceso y una experiencia de vida silvestre y marina única y de primera categoría.<p>
+                <button type="button" class="myButton">Reservar destino</button>
+            </div>
+            <div class="destino ">
+                <h3 class="titulo">Riviera Maya</h3>
+                <p class="p">La Riviera Maya es un destino turístico mexicano que por siglos se mantuvo como uno de los secretos mejor guardados por viajeros Méxicanos y extranjeros., conocida por su extraordinaria belleza y playas.</p>
+                <button type="button" class="myButton">Reservar destino</button>
+            </div>
+            <div class="destino">
+                <h3 class="titulo">Oleta River</h3>
+                <p class="p">En Oleta Rivercuenta con relajantes manglares enredados dentro de este estuario de río protegido. Abarca acres de vegetación, ideal para practicar kayak, ciclismo, senderismo, natación y acampada.</p>
+                <button type="button" class="myButton">Reservar destino</button>
+            </div>
+            <div class="destino">
+                <h3 class="titulo">Ses Salines</h3>
+                <p class="p">El municipio de Ses Salines es uno de los lugares con más encanto que nos podemos encontrar en la isla.Una de sus peculiaridades es que todavía se recoge la sal de forma artesanal.</p>
+                <button type="button" class="myButton">Reservar dstino</button>
+            </div>   
+            <div class="destino">
+                <h3 class="titulo">París</h3>
+                <p class="p">París es una ciudad que parece diseñada para el disfrute del viajero. Sus calles, plazas, edificios, jardines y monumentos parecen ideados para que cualquier persona que visite París desee volver.</p>
+                <button type="button" class="myButton">Reservar destino</button>
+            </div>
+            <div class="destino">
+                <h3 class="titulo">Roma</h3>
+                <p class="p">Roma es conocida como la "Ciudad Eterna" porque en ella el tiempo parece haberse parado hace siglos. los restos de imponentes edificios hacen que un paseo por sus calles se convierta en un viaje en el tiempo.</p>
+                <button type="button" class="myButton">Reservar destino</button>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="w3-container w3-red">
+          <a  href="http://www.facebook.com" target="_blank">
+          <img src="/static/assets/img/facebook.png" alt="Facebook"></a>
+          <a  href="http://www.Instagram.com" target="_blank">
+          <img src="/static/assets/img/instagram.png" alt="Instagram"></a>
+          <p>© WorldWide Travelling</p>
+          <a  href="http://www.Telegram.com" target="_blank">
+          <img src= "/static/assets/img/telegrama.png" alt="Telegrama"></a>
+          <a href="http://www.Twitter.com" target="_blank" >
+          <img src="/static/assets/img/twitter.png" alt="Twitter"></a>
+          </div>
+      </footer>
+</body>
+</html>
