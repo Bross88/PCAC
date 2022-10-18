@@ -11,3 +11,6 @@ def about_us(request):
 
 def animation(request):
     return render(request, 'animation.html')
+
+def formulario(request):
+    return render(request, 'formulario.html')

@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda</title>
-    <link rel="stylesheet" href=ayuda.css>
+    <link href="{% static 'css/ayuda.css' %}" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header> 
         <div class="container">
             <p class="title">WORLDWIDE TRAVELS</p>
             <nav>
@@ -22,32 +22,32 @@
             </nav>
         </div>
     </header>
-    <div class="main-buscador" style="background-image: url(/hotel.jpg);">
+    <div class="main-buscador" style=background-image:url("/static/assets/img/hotel.jpg");>
         <h2>¿Cómo podemos ayudarte?</h2>
-        <img src="/buscador.png" alt="" style="width: 3.0rem; height: 3.0rem;">
+        <img src="{% static 'assets/img/buscador.png' %}"alt="" style="width: 3.0rem; height: 3.0rem;">
         <input type="search" placeholder="Escribe una palabra sobre lo que buscas. Ej.: cancelaciones, cambios, cobros, etc.."/>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Estado de mi reserva</h4>
             <a href="#reserva">
-            <img src="/reserva.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/reserva.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Medios de pago</h4>
             <a href="#tarjetas">
-            <img src="/tarjeta-de-debito.png"alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/tarjeta-de-debito.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Cambios y devoluciones</h4>
             <a href="#cambios">
-            <img src="/cambiar.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/cambiar.png' %}"alt="" style="width: 3.0rem ;">
             </a>
         </div>
         <div class="div-Ayuda" style="text-align: center;">
             <h4>Inconvenientes en destino</h4>
             <a href="#pasaporte">
-            <img src="/problemas.png" alt="" style="width: 3.0rem ;">
+            <img src="{% static 'assets/img/problemas.png' %}" alt="" style="width: 3.0rem ;">
             </a>
         </div>
     </div>
@@ -55,16 +55,16 @@
         <div class="main-container">
             <aside class="main-aside">
                 <div class="div-aside">
-                    <img class="playa_1" src="/playas_1.png" alt="">
+                    <img class="playa_1" src="{% static 'assets/img/playas_1.png' %}" alt="">
                 </div>
                 <div class="div-aside">
-                    <img class="playa_2" src="/playas_2.png" alt="">
+                    <img class="playa_2" src="{% static 'assets/img/playas_2.png' %}" alt="">
                 </div>
                 <div class="div-aside">
-                    <img class="playa_1" src="/playas_3.png" alt="">
+                    <img class="playa_1" src="{% static 'assets/img/playas_3.png' %}" alt="">
                 </div>
                 <div class="div-aside">
-                    <img class="playa_2" src="/playas_4.png" alt="">
+                    <img class="playa_2" src="{% static 'assets/img/playas_4.png' %}" alt="">
                 </div>
             </aside>
             
