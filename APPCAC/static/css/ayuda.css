@@ -230,11 +230,58 @@ footer ul{
     border-radius: 15px;
     color: rgb(247, 248, 248);
 }
+
+/* FORMUALRIO*/
+
+.aside-formulario {
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 160px;
+    right: 0%;
+    flex-direction: row;
+    margin-right: 5px;
+    text-align: center;
+
+}
+
+.aside-formularioTablet{
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 160px;
+    right: 0%;
+    flex-direction: row;
+    margin-right: 5px;
+    text-align: center;
+}
+
+
+.aside-imgImpar-form{
+    padding: 4px;
+    width: 80%;
+    border-radius: 5%;
+    animation-name: asideFormularioImagenesSlideinIzq;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.aside-imgPar-form{
+    padding: 4px;
+    width: 80%;
+    border-radius: 5%;
+    animation-name: asideFormularioImagenesSlideinDer;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
 /* CSS MOBILE*/
 
 @media screen and (max-width: 640px) {
 
-.main-aside,.div-Ayuda {display: none;}
+.main-aside,.div-Ayuda,.aside-formulario, .aside-formularioTablet {display: none;}
 .main-buscador {flex-direction: column;}
 input {width:50vw;}
 .logosMediosdePago img {width: 3.0rem;}
@@ -247,7 +294,19 @@ input {width:50vw;}
     input {width:50vw;}
         
     }
-    @keyframes asideImagenesOpacidad{
+@media screen and (min-width: 641px) and (max-width: 999px) {
+        .aside-formulario {display: none;}
+        .aside-formularioTablet {margin-top: 150px;}
+        nav {text-align: center}
+        }
+@media screen and (min-width: 641px) and (max-width: 767px) {
+            .aside-formularioTablet {display: none;}
+            }
+@media screen and (min-width: 1000px) {
+                .aside-formularioTablet {display: none;}
+                }           
+
+@keyframes asideImagenesOpacidad{
          from{
             opacity: 0;
          }
@@ -257,7 +316,7 @@ input {width:50vw;}
 
     }
 
-    @keyframes asideImagenesSlidein {
+@keyframes asideImagenesSlidein {
         from {
           margin-right: 0%;
         }
@@ -267,7 +326,30 @@ input {width:50vw;}
 
         }
       }
-      @keyframes asideImagenesRotationIzq {
+
+@keyframes asideFormularioImagenesSlideinIzq {
+        from {
+          margin-right: 0%;
+        }
+      
+        to {
+          margin-left: 5%;
+
+        }
+      }
+
+@keyframes asideFormularioImagenesSlideinDer {
+        from {
+          margin-left: 5%;
+        }
+      
+        to {
+          margin-right: 0%;
+
+        }
+      }
+
+@keyframes asideImagenesRotationIzq {
         from {
           transform: rotate(10deg);
         }
@@ -277,7 +359,7 @@ input {width:50vw;}
 
         }
       }
-      @keyframes asideImagenesRotationDer {
+@keyframes asideImagenesRotationDer {
         from {
           transform: rotate(-10deg);
         }
