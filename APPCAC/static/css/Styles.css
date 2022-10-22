@@ -155,31 +155,88 @@ header a:hover{
     background-image:url("/static/assets/img/namucuraCO.jpg");
     background-size: cover;
     background-position: center center;
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
 }
 
+.oferta:first-child:hover{
+    filter: brightness(100%);    
+}
 
 
 .oferta:nth-child(2){
     background-image:url("/static/assets/img/riveramayaMX.jpg");
     background-size: cover;
     background-position: center center;
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
 }
 
+.oferta:nth-child(2):hover{
+    filter: brightness(100%);    
+}
 
 
 .oferta:nth-child(3){
     background-image:url("/static/assets/img/OletariverUS.png");
     background-size: cover;
     background-position: center center;
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
 }
 
+.oferta:nth-child(3):hover{
+    filter: brightness(100%)
+
+}
 
 .oferta:nth-child(4){
     background-image:url("/static/assets/img/sessalinesEU.jpg");
     background-size: cover;
     background-position: center center;
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
 }
 
+.oferta:nth-child(4):hover{
+    filter: brightness(100%);    
+}
 
 footer {
     background-color: rgb(37, 39, 39);
@@ -331,16 +388,18 @@ ul{
     
 }
 
+#imgf{
+    background-image: url("/static/assets/img/sobre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
 
-
-
-
-
-
-
+}
 
 @media (min-width: 660px){
     .container-partner{
+        
+        justify-content: space-between;
         background-image: none;
         
         width: 100%;
@@ -349,7 +408,7 @@ ul{
         font-size: 1em;
     
     }
-    
+
 
 }
 
