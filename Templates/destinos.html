@@ -28,47 +28,49 @@
             <div class="destino">
                 <h3 class="titulo">Isla Mucura</h3>
                 <p class="p">Esta isla es un verdadero tesoro colombiano que cuenta con buena comida, alojamiento, fácil acceso y una experiencia de vida silvestre y marina única y de primera categoría.<p>
-                <button type="button" class="myButton">Reservar destino</button>
+                <button type="button" class="myButton"> <a href="/Templates/error.html">Reservar destino</a></button>
             </div>
             <div class="destino ">
                 <h3 class="titulo">Riviera Maya</h3>
                 <p class="p">La Riviera Maya es un destino turístico mexicano que por siglos se mantuvo como uno de los secretos mejor guardados por viajeros Méxicanos y extranjeros., conocida por su extraordinaria belleza y playas.</p>
-                <button type="button" class="myButton">Reservar destino</button>
+                <button type="button" class="myButton"><a href="/Templates/error.html">Reservar destino</a></button>
             </div>
             <div class="destino">
                 <h3 class="titulo">Oleta River</h3>
                 <p class="p">En Oleta Rivercuenta con relajantes manglares enredados dentro de este estuario de río protegido. Abarca acres de vegetación, ideal para practicar kayak, ciclismo, senderismo, natación y acampada.</p>
-                <button type="button" class="myButton">Reservar destino</button>
+                <button type="button" class="myButton"><a href="/Templates/error.html">Reservar destino</a></button>
             </div>
             <div class="destino">
                 <h3 class="titulo">Ses Salines</h3>
                 <p class="p">El municipio de Ses Salines es uno de los lugares con más encanto que nos podemos encontrar en la isla.Una de sus peculiaridades es que todavía se recoge la sal de forma artesanal.</p>
-                <button type="button" class="myButton">Reservar dstino</button>
+                <button type="button" class="myButton"><a href="/Templates/error.html">Reservar destino</a></button>
             </div>   
             <div class="destino">
                 <h3 class="titulo">París</h3>
                 <p class="p">París es una ciudad que parece diseñada para el disfrute del viajero. Sus calles, plazas, edificios, jardines y monumentos parecen ideados para que cualquier persona que visite París desee volver.</p>
-                <button type="button" class="myButton">Reservar destino</button>
+                <button type="button" class="myButton"><a href="/Templates/error.html">Reservar destino</a></button>
             </div>
             <div class="destino">
                 <h3 class="titulo">Roma</h3>
                 <p class="p">Roma es conocida como la "Ciudad Eterna" porque en ella el tiempo parece haberse parado hace siglos. los restos de imponentes edificios hacen que un paseo por sus calles se convierta en un viaje en el tiempo.</p>
-                <button type="button" class="myButton">Reservar destino</button>
+                <button type="button" class="myButton"><a href="/Templates/error.html">Reservar destino</a></button>
             </div>    
         </div>
     </main>
-    <footer>
-        <div class="w3-container w3-red">
-          <a  href="http://www.facebook.com" target="_blank">
-          <img src="/static/assets/img/facebook.png" alt="Facebook"></a>
-          <a  href="http://www.Instagram.com" target="_blank">
-          <img src="/static/assets/img/instagram.png" alt="Instagram"></a>
-          <p>© WorldWide Travelling</p>
-          <a  href="http://www.Telegram.com" target="_blank">
-          <img src= "/static/assets/img/telegrama.png" alt="Telegrama"></a>
-          <a href="http://www.Twitter.com" target="_blank" >
-          <img src="/static/assets/img/twitter.png" alt="Twitter"></a>
-          </div>
-      </footer>
+    <footer id="foot">
+        <div class="container">
+            <p>Nuestras Redes Sociales</p>
+            <div class="img-container">
+                <a href="{% url 'APPCACAboutus' %}" target="_blank">
+                    <img class="about-btn" alt="" src="{% static 'assets/img/aboutbtn.jpg' %}"/>
+                <a href="https://wa.me/541168176276?text=Bienvenido%20a%20WorldWide%20Travels%20un%20asesor%20lo%20atendera%20pronto." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Bross88/PCAC" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <h5> &copy  WorldWide Travel </h5>
+        </div>    
+    </footer>
 </body>
 </html>
