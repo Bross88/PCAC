@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="well well-sm">
-                    <form class="form-horizontal" onsubmit="return validacion()";>
+                    <form id="form" class="form-horizontal" action= "https://formspree.io/f/xlevwqbr"  method="POST" onsubmit="return validacion()";>
                         <fieldset>
                             <span><img src="{% static 'assets/img/servicio-al-cliente.png' %}" alt="" style="width: 5.0rem ;">
                                 <legend class="text-center header">Contáctanos</legend>
@@ -95,68 +95,88 @@
         </div>
     </aside>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-            function validacion() 
+<script>
+        function validacion() 
+    {
+        nombre = document.getElementById("nombre").value;
+        email = document.getElementById("email").value;
+        phone = document.getElementById("phone").value;
+        pregunta = document.getElementById("pregunta").value;
+        
+        
+        if( nombre == null || nombre.length == 0) 
         {
-            nombre = document.getElementById("nombre").value;
-            email = document.getElementById("email").value;
-            phone = document.getElementById("phone").value;
-            pregunta = document.getElementById("pregunta").value;
-            
-            
-            if( nombre == null || nombre.length == 0) 
-            {
-                Swal.fire({
-                    text: "Por favor ingresá tu nombre y apellido para continuar...",
-                    icon: "info",});
-                document.getElementById('mensajeNombre').innerHTML = "Ingresa tu nombre!";
-                elemento = document.getElementById('nombre');
-                elemento.focus();
-                return false;
-            }
-
-            else if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(email)))
-            {
-                Swal.fire({
-                    text: "Por favor ingresá tu dirección de mail para continuar...",
-                    icon: "info",});
-                document.getElementById('mensajeEmail').innerHTML = "No es una direccion de email correcta!" ;
-                elemento = document.getElementById('email');
-                elemento.value = '';
-                elemento.focus();
-                return false;
-            }
-
-            else if (isNaN(phone) || phone ==0 || phone == null) 
-            {
-                Swal.fire({
-                    text: "Por favor ingresá tu número de teléfono para continuar...",
-                    icon: "info",});                
-                document.getElementById('mensajePhone').innerHTML = "El teléfono debe ser un numero!";
-                return false;
-            }
-            else if (pregunta.length == 0 || pregunta.length < 101) 
-                {
-                    Swal.fire({
-                    text: "Ingresá tu consulta! (mínimo 100 carácteres)",
-                    icon: "info",}); 
-                    document.getElementById('mensajePregunta').innerHTML = "En que podemos ayudarte?";
-                    
-                    return false;
-                }
-
-            return Swal.fire({
-                    text: "Mensaje enviado!. Muchas gracias por contactarnos!",
-                    icon: "success",});
+            Swal.fire({
+                text: "Por favor ingresá tu nombre y apellido para continuar...",
+                icon: "info",});
+            document.getElementById('mensajeNombre').innerHTML = "Ingresa tu nombre!";
+            elemento = document.getElementById('nombre');
+            elemento.focus();
+            return false;
         }
-    </script>
+
+        else if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(email)))
+        {
+            Swal.fire({
+                text: "Por favor ingresá tu dirección de mail para continuar...",
+                icon: "info",});
+            document.getElementById('mensajeEmail').innerHTML = "No es una direccion de email correcta!" ;
+            elemento = document.getElementById('email');
+            elemento.value = '';
+            elemento.focus();
+            return false;
+        }
+
+        else if (isNaN(phone) || phone ==0 || phone == null) 
+        {
+            Swal.fire({
+                text: "Por favor ingresá tu número de teléfono para continuar...",
+                icon: "info",});                
+            document.getElementById('mensajePhone').innerHTML = "El teléfono debe ser un numero!";
+            return false;
+        }
+        else if (pregunta.length == 0 || pregunta.length < 101) 
+            {
+                Swal.fire({
+                text: "Ingresá tu consulta! (mínimo 100 carácteres)",
+                icon: "info",}); 
+                document.getElementById('mensajePregunta').innerHTML = "En que podemos ayudarte?";
+                
+                return false;
+            }
+
+        return true;
+    }
+</script> 
+<script>       
+
+        const $form = document.querySelector ('#form')
+            $form.addEventListener ('submit',handleSubmit)
+async function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if(response.ok){
+        this.reset()
+        Swal.fire({text: "Mensaje enviado!. Muchas gracias por contactarnos!",
+                    icon: "success"});
+    }
+    }
+</script>    
+
     <footer id="foot">
         <div class="container">
             
             <p>Nuestras Redes Sociales</p>
             <div class="img-container">
                 <a href="{% url 'APPCACAboutus' %}" target="_blank">
-                    <img class="about-btn" alt="" src="{% static 'assets/img/aboutbtn.jpg' %}"/>
+                    <img class="about-btn" alt="" src="{% static 'assets/img/aboutbtn.jpg' %}"/></a>
                 <a href="https://wa.me/541168176276?text=Bienvenido%20a%20WorldWide%20Travels%20un%20asesor%20lo%20atendera%20pronto." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://github.com/Bross88/PCAC" target="_blank"><i class="fab fa-github"></i></a>
