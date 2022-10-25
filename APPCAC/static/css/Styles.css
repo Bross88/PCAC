@@ -388,13 +388,11 @@ ul{
     
 }
 
-#imgf{
-    background-image: url("/static/assets/img/sobre.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 15px;
-
+.video{
+    width: 100%;
+    height: auto;
 }
+
 
 @media (min-width: 660px){
     .container-partner{
