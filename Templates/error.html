@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/css/error.css" rel="stylesheet">
-    <script src="/static/js/error.js"></script>  
+    <link href="{% static 'css/error.css' %}" rel="stylesheet">
+    <script src="{% static 'js/error.js' %}"></script>
+    
+    
     <title>Error</title>
 </head>
 <body>
@@ -39,5 +43,7 @@
        <h1 class="second-four">4</h1>
         <p class="wrong-para">Uh Oh! Page not found!</p>
       </div>
+      
 </body>
+
 </html>

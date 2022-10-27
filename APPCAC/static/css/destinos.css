@@ -1,3 +1,6 @@
+/* ver fuente a importar*/
+
+
 .layoutDestinos {
     display: flex;
     flex-direction: row;
@@ -100,7 +103,7 @@
 
 body {
     margin: 0;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* ver fuente a importar*/
 }
   
 h1 {
@@ -136,7 +139,7 @@ h4 {
     line-height: 16px;
     padding: 6px; 
     border-radius: 10px; 
-    font-family: Georgia, serif; 
+    font-family: Georgia, serif;     /* ver fuente a importar*/
     font-weight: normal; 
     text-decoration: none; 
     font-style: normal; 
@@ -153,10 +156,10 @@ h4 {
 .myButton:active {
     background: #144E75; }
 
-A:link {
+.destino a:link {
     text-decoration: none; }
 
-A:hover { 
+.destino a:hover { 
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: Georgia, serif; 
@@ -164,7 +167,7 @@ A:hover {
     font-style: normal; 
     font-variant: normal; }
 
-A:visited {
+.destino a:visited {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: Georgia, serif; 
@@ -181,6 +184,132 @@ A:visited {
 textarea:focus, input:focus{
     outline: none !important;}
     
-a{
+.layoutDestinos a{
     text-decoration: none !important;
     outline: none !important;}
+
+/* NAV --- FOTTER*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: aliceblue;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(249, 250, 250);
+    
+}
+
+header .title{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(9, 10, 10);
+    font-size: 3em;
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(113, 200, 200);
+    font-size: 1.25em;
+}
+
+header a:hover{
+    color: rgb(142, 106, 176);
+}
+
+footer {
+    background-color: rgb(37, 39, 39);
+}
+
+footer .container{
+    color: rgb(230, 237, 243);
+    height: 250px;
+}
+
+footer p{
+    text-align: center;
+    color: rgb(249, 249, 248);
+}
+footer h5{
+    text-align: center;
+    color: rgb(249, 249, 248);
+    font-size: 25px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    text-align: center;
+    color: lemonchiffon;
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.about-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+.fa-twitter{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(65, 233, 236);
+    
+    
+}
+.fa-github{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(171, 167, 167);
+}
+.fa-facebook-f{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(23, 23, 243);
+}
+.fa-whatsapp{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(20, 201, 53);
+}
+.fa-envelope{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    color: rgb(247, 248, 248);
+}
+    

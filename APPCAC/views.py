@@ -14,3 +14,10 @@ def animation(request):
 
 def formulario(request):
     return render(request, 'formulario.html')
+
+def destinos(request):
+    return render(request, 'destinos.html')
+
+def error(request):
+    return render(request, 'error.html')
+
