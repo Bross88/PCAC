@@ -1,5 +1,5 @@
 /* ver fuente a importar*/
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300;500;700&display=swap');
 
 .layoutDestinos {
     display: flex;
@@ -105,7 +105,10 @@ body {
     margin: 0;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* ver fuente a importar*/
 }
-  
+
+nav{
+    background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
+}
 h1 {
     font-size: 3.5em;
 }
@@ -196,7 +199,7 @@ html{
 
 body{
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: roboto Condensed;
     background-color: aliceblue;
 }
 .container{

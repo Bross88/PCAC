@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300;500;700&display=swap');
+
 *{
     box-sizing: border-box;
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body{
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: roboto Condensed !important;
 }
 
 h1{font-size: 3em;}
@@ -26,11 +28,15 @@ button{
     box-shadow:2px 2px 10px rgba(0,0,0,0,5);
     color: azure;
     background-color: rgb(103, 227, 227);
+    
 }
 button:hover{
     background-color: rgb(142, 106, 176);
 }
 
+#PRINCIPAL a{
+    text-decoration: none;
+}
 .container{
     max-width: 1400px;
     margin: auto;
@@ -50,10 +56,10 @@ header{
 
 header .title{
     margin: 0;
-    padding: 25px 30px;
+    padding: 15px 20px;
     font-weight: bold;
     color: rgb(9, 10, 10);
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header .container{
@@ -61,24 +67,28 @@ header .container{
     flex-direction: column;
     align-items: center;
 }
-
+nav{
+    background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
+}
 header .nav{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+    display:flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    padding-bottom: 25px !important;
+    
+   
 }
 
 header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(113, 200, 200);
-    font-size: 1.25em;
+    padding: 5px 12px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    color: rgb(241, 244, 244) !important;
+    font-size: 1.25em !important;
 }
 
 header a:hover{
-    color: rgb(142, 106, 176);
+    color: rgb(142, 106, 176) !important;
 }
 
 #PRINCIPAL{
@@ -267,73 +277,60 @@ footer h5{
 }
 
 footer ul{
-    text-align: center;
-    color: lemonchiffon;
-    list-style: none;
-    text-decoration: none;
-    font-size: larger;
+    text-align: center!important;
+    color: lemonchiffon!important;
+    list-style: none!important;
+    text-decoration: none!important;
+    font-size: larger!important;
 }
 
 .about-btn{
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
+    width: 80px!important;
+    height: 80px!important;
+    border-radius: 15px!important;
 }
 .fa-twitter{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(65, 233, 236);
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 15px!important;
+    color: rgb(65, 233, 236)!important;
     
     
 }
 .fa-github{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(171, 167, 167);
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 15px!important;
+    color: rgb(171, 167, 167)!important;
 }
 .fa-facebook-f{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(23, 23, 243);
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 15px!important;
+    color: rgb(23, 23, 243)!important;
 }
 .fa-whatsapp{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(20, 201, 53);
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 15px!important;
+    color: rgb(20, 201, 53)!important;
 }
 .fa-envelope{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    color: rgb(247, 248, 248);
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 15px!important;
+    color: rgb(247, 248, 248)!important;
 }
 
-.container-partner{
+.container-carousel{
     background-image:url("/static/assets/img/fondopartners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 600px;
     padding: 50px;
+    margin-bottom: 50px;
 
-}
-
-.partner{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 350px;
-
-}
-
-.partner img{
-    width: 120px;
-    height: 120px;
-    
 }
 
 ul{
@@ -371,8 +368,8 @@ ul{
     
 }
 .text-subs{
-    color: black;
-    font-size: 1.8em;
+    color: black !important;
+    font-size: 1.8em !important; 
 
 }
 .btn-sub{
@@ -392,6 +389,8 @@ ul{
     width: 100%;
     height: autoc;
 }
+
+
 
 
 @media (min-width: 660px){

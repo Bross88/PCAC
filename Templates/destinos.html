@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
     <link href="{% static 'css/destinos.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <p class="title animate__animated animate__flash">WORLDWIDE TRAVELS</p>
             <nav>
-                <a href="#PRINCIPAL">Home</a>
+                <a href="{% url 'Index' %}" >Home</a>
                 <a href="#foot">Sobre Nosotros</a>
                 <a href="#foot">Contacto</a>
                 <a href="{% url 'APPCACfrecuentes' %}">Preguntas Frecuentes</a>

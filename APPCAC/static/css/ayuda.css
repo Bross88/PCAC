@@ -1,113 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300;500;700&display=swap');
 body, header, main, footer  {
     min-height: 50px;
     
 }
-
+body{
+    font-family: roboto Condensed;
+}
+nav{
+    background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
+}
 .main-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
     
 }
 
 .main-buscador {
-    border-radius: 1.0rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0.5rem;
-    align-items: center;
+    border-radius: 1.0rem !important;
+    margin: 0.5rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    padding: 0.5rem !important;
+    align-items: center !important;
     
 }
 
 .main-buscador h2,h4 {
-    font-size: 25px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-size: 25px !important;
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center !important;
 }
 
 .main-buscador img:hover{
-    animation-name: asideImagenesRotationIzq;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-name: asideImagenesRotationIzq !important;
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
 }
 
 input{
-    border: 2px solid black;
-    width: 20vw;
-    height: 5vh;
+    border: 2px solid black !important;
+    width: 20vw !important;
+    height: 5vh !important;
 }
 
 .div-Ayuda{
-    border-radius: 20%;
+    border-radius: 20% !important;
 }
 .main-section{
     
-    width: 80%;
-    margin: 5.5rem;
+    width: 80% !important;
+    margin: 5.5rem !important;
     
 }
 .div-preguntas {
-    border-top: 2px grey solid;
-    text-align: center;
-    width: 40%;
+    border-top: 2px grey solid !important;
+    text-align: center !important;
+    width: 40% !important;
 }
 
 .div-respuestas {
-    border-top: 2px grey solid;
-    width: 40%;
-    text-align: left;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
+    border-top: 2px grey solid !important;
+    width: 40% !important;
+    text-align: left !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.5rem !important;
 }
 
 
 .main-aside{
-    width: 30%;
-    margin: 8px;
-    flex-direction: row;
+    width: 30% !important;
+    margin: 8px !important;
+    flex-direction: row !important;
 }
 
 
 
 .playa_1 {
-    border-radius: 5%;
-    width: 100%;
-    display: block;
-    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationIzq;
-    animation-duration: 2s,3s,2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    border-radius: 5% !important;
+    width: 100% !important;
+    display: block !important;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationIzq !important;
+    animation-duration: 2s,3s,2s !important;
+    animation-direction: alternate !important;
+    animation-iteration-count: infinite !important;
 }
 
 .playa_2 {
-    border-radius: 5%;
-    width: 100%;
-    display: block;
-    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationDer;
-    animation-duration: 2s,3s,2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    border-radius: 5% !important;
+    width: 100% !important;
+    display: block !important;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationDer!important;
+    animation-duration: 2s,3s,2s !important;
+    animation-direction: alternate !important;
+    animation-iteration-count: infinite !important;
 }
 
 .section-container {
     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1.0rem;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    margin: 1.0rem !important;
 }
 .logosMediosdePago {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 1.0rem;
-    padding: 1.0rem;
+    display: grid !important;
+    grid-template-columns: repeat(3,auto) !important;
+    grid-gap: 1.0rem !important;
+    padding: 1.0rem !important;
 
 }
 .logosMediosdePago img {
-    width: 5.0rem;
+    width: 5.0rem !important;
 }
 
 
@@ -117,7 +123,7 @@ html{
 
 body{
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: roboto Condensed;
 }
 .container{
     max-width: 1400px;
