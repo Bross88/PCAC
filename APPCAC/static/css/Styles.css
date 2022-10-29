@@ -6,11 +6,12 @@
 
 html{
     scroll-behavior: smooth !important;
+    font-family: roboto Condensed !important;
 }
 
 body{
     margin: 0;
-    font-family: roboto Condensed !important;
+    
 }
 
 h1{font-size: 3em;}

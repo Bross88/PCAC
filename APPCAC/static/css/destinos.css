@@ -101,11 +101,6 @@
     margin: 30px;
 }
 
-body {
-    margin: 0;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* ver fuente a importar*/
-}
-
 nav{
     background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
 }
@@ -142,7 +137,7 @@ h4 {
     line-height: 16px;
     padding: 6px; 
     border-radius: 10px; 
-    font-family: Georgia, serif;     /* ver fuente a importar*/
+    font-family: roboto Condensed !important;   /* ver fuente a importar*/
     font-weight: normal; 
     text-decoration: none; 
     font-style: normal; 
@@ -195,6 +190,7 @@ textarea:focus, input:focus{
 
 html{
     scroll-behavior: smooth;
+    font-family: roboto Condensed !important;
 }
 
 body{
@@ -214,10 +210,10 @@ header{
 
 header .title{
     margin: 0;
-    padding: 25px 30px;
+    padding: 15px 20px;
     font-weight: bold;
     color: rgb(9, 10, 10);
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header .container{
