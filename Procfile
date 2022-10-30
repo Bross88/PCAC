@@ -1,1 +1,1 @@
-web: gunicorn PCAC.wsgi
+web: gunicorn PCAC.wsgi --log-file -
