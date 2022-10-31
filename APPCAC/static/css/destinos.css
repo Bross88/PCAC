@@ -21,16 +21,22 @@
     font-size: 18px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: #000000;
+    color: hsla(0, 0%, 100%, 0.943);
     font-weight: normal;
     text-decoration: none;
 } 
 
 .destino:first-child {
-    background-image:url("/static/assets/img/namucuraCO.jpg");
+    /*background-image:url("/static/assets/img/namucuraCO.jpg");*/
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/namucuraCO.jpg");
 }
 
 .destino:first-child:hover {
@@ -42,6 +48,13 @@
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/riveramayaMX.jpg");
+
 }
 
 .destino:nth-child(2):hover {
@@ -53,6 +66,12 @@
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/OletariverUS.jpg");
 }
 
 .destino:nth-child(3):hover {
@@ -64,6 +83,12 @@
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/salines.png");
 }
 
 .destino:nth-child(4):hover {
@@ -75,6 +100,12 @@
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/paris.jpg");
 }
 
 .destino:nth-child(5):hover {
@@ -86,6 +117,12 @@
     background-size: cover;
     background-position: center center;
     transition: transform .2s;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/assets/img/roma.jpg");
 }
 
 .destino:nth-child(6):hover {
@@ -104,31 +141,20 @@
 nav{
     background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
 }
-h1 {
-    font-size: 3.5em;
-}
-
-h2 {
-    font-size: 2.7em;
-}
 
 .titulo {
     font-size: 2em;
-    text-shadow:2px 2px 0 #4074b5, 2px 2px 2px rgba(238,216,237,0);
     margin-top: 0.25em;
     margin-bottom: 0.25em;
+    filter: brightness(70%);
 }
-
-h4 {
-    font-size: 1755em;
+.titulo:hover{
+    filter: brightness(100%);
 }
-
 .p {
-    font-size: 0.75em;
-    color: #000000;
+    font-size: 0.80em;
+    color: #f4e8e8;
     font-weight: bold;
-    text-shadow: 2px 0px 0 #ffffff;
-    
 }
   
 .myButton {
