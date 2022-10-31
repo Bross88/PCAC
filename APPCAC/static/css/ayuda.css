@@ -10,110 +10,112 @@ nav{
     background-image: linear-gradient(to right , rgb(101, 149, 194),rgb(120, 164, 193),rgb(152, 190, 219)) !important;
 }
 .main-container {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
 }
 
 .main-buscador {
-    border-radius: 1.0rem !important;
-    margin: 0.5rem !important;
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-around !important;
-    padding: 0.5rem !important;
-    align-items: center !important;
+    background-image:url("/static/assets/img/hotel.jpg");
+    border-radius: 1.0rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: center;
     
 }
 
 .main-buscador h2,h4 {
     font-size: 25px !important;
-    color: white !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    text-align: center !important;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .main-buscador img:hover{
-    animation-name: asideImagenesRotationIzq !important;
-    animation-duration: 2s !important;
-    animation-iteration-count: infinite !important;
+    animation-name: asideImagenesRotationIzq;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-input{
-    border: 2px solid black !important;
-    width: 20vw !important;
+.main-buscador input{
+    border: 2px solid white !important;
+    border-radius: 1.0rem !important ;
+    width: 20vw;
     height: 5vh !important;
 }
 
 .div-Ayuda{
-    border-radius: 20% !important;
+    border-radius: 20%;
 }
 .main-section{
     
-    width: 80% !important;
-    margin: 5.5rem !important;
+    width: 80%;
+    margin: 5.5rem;
     
 }
 .div-preguntas {
-    border-top: 2px grey solid !important;
-    text-align: center !important;
-    width: 40% !important;
+    border-top: 2px grey solid;
+    text-align: center;
+    width: 40%;
 }
 
 .div-respuestas {
-    border-top: 2px grey solid !important;
-    width: 40% !important;
-    text-align: left !important;
-    padding-right: 0.5rem !important;
-    padding-top: 0.5rem !important;
+    border-top: 2px grey solid;
+    width: 40%;
+    text-align: left;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 
 .main-aside{
-    width: 30% !important;
-    margin: 8px !important;
-    flex-direction: row !important;
+    width: 30%;
+    margin: 8px;
+    flex-direction: row;
 }
 
 
 
 .playa_1 {
-    border-radius: 5% !important;
-    width: 100% !important;
-    display: block !important;
-    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationIzq !important;
-    animation-duration: 2s,3s,2s !important;
-    animation-direction: alternate !important;
-    animation-iteration-count: infinite !important;
+    border-radius: 5%;
+    width: 100%;
+    display: block;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationIzq;
+    animation-duration: 2s,3s,2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .playa_2 {
-    border-radius: 5% !important;
-    width: 100% !important;
-    display: block !important;
-    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationDer!important;
-    animation-duration: 2s,3s,2s !important;
-    animation-direction: alternate !important;
-    animation-iteration-count: infinite !important;
+    border-radius: 5%;
+    width: 100% ;
+    display: block;
+    animation-name: asideImagenesSlidein,asideImagenesOpacidad,asideImagenesRotationDer;
+    animation-duration: 2s,3s,2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .section-container {
     
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    margin: 1.0rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.0rem;
 }
 .logosMediosdePago {
     display: grid !important;
-    grid-template-columns: repeat(3,auto) !important;
+    grid-template-columns: repeat(3,auto);
     grid-gap: 1.0rem !important;
     padding: 1.0rem !important;
 
 }
 .logosMediosdePago img {
-    width: 5.0rem !important;
+    width: 5.0rem;
 }
 
 
@@ -141,6 +143,7 @@ header .title{
     font-weight: bold;
     color: rgb(9, 10, 10);
     font-size: 2.5em;
+    text-align: center;
 }
 
 header .container{
@@ -160,7 +163,7 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(113, 200, 200);
+    color: rgb(241, 244, 244);
     font-size: 1.25em;
 }
 
@@ -240,26 +243,23 @@ footer ul{
 
 /* FORMUALRIO*/
 
+
 .aside-formulario {
     width: 35%;
-    height: 70%;
     position: absolute;
-    top: 160px;
+    top: 20%;
     right: 0%;
     flex-direction: row;
-    margin-right: 5px;
     text-align: center;
 
 }
 
 .aside-formularioTablet{
     width: 35%;
-    height: 70%;
     position: absolute;
-    top: 160px;
+    top: 20%;
     right: 0%;
     flex-direction: row;
-    margin-right: 5px;
     text-align: center;
 }
 
@@ -267,6 +267,7 @@ footer ul{
 .aside-imgImpar-form{
     padding: 4px;
     width: 80%;
+    height: 50%;
     border-radius: 5%;
     animation-name: asideFormularioImagenesSlideinIzq;
     animation-duration: 1s;
@@ -277,6 +278,7 @@ footer ul{
 .aside-imgPar-form{
     padding: 4px;
     width: 80%;
+    height: 50%;
     border-radius: 5%;
     animation-name: asideFormularioImagenesSlideinDer;
     animation-duration: 1s;
@@ -284,34 +286,96 @@ footer ul{
     animation-iteration-count: infinite;
 }
 
-/* CSS MOBILE*/
+                
+/* MEDIA QUERIES*/
 
-@media screen and (max-width: 640px) {
+/* FORMULARIO*/
 
-.main-aside,.div-Ayuda,.aside-formulario, .aside-formularioTablet {display: none;}
-.main-buscador {flex-direction: column;}
-input {width:50vw;}
-.logosMediosdePago img {width: 3.0rem;}
+/*MOBILE*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .aside-formulario, .aside-formularioTablet {display: none;} 
+    .about-btn, .fa-twitter, .fa-github, .fa-facebook-f, .fa-whatsapp {
+        width: 30px;
+        height: auto;        
+    }    
 }
-/* CSS TABLET*/
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-    .div-Ayuda {display: none;}
-    h2 {font-size:35px;}    
-    input {width:50vw;}
-        
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .aside-formulario {display: none;}
+    
+}
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .aside-formularioTablet {display: none;}
+    .aside-formulario div{
+        width: 90%;
     }
-@media screen and (min-width: 641px) and (max-width: 999px) {
-        .aside-formulario {display: none;}
-        .aside-formularioTablet {margin-top: 150px;}
-        nav {text-align: center}
-        }
-@media screen and (min-width: 641px) and (max-width: 767px) {
-            .aside-formularioTablet {display: none;}
-            }
-@media screen and (min-width: 1000px) {
-                .aside-formularioTablet {display: none;}
-                }           
+}
+
+/* PREGUNTAS FRECUENTES*/
+
+/*MOBILE*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .about-btn, .fa-twitter, .fa-github, .fa-facebook-f, .fa-whatsapp {
+        width: 30px;
+        height: auto;        
+    }
+    .main-aside,.div-Ayuda {display: none;}
+.main-buscador {flex-direction: column;}
+.main-buscador h2{
+    display: block;
+}
+input {width:350px;}
+.section-container h3 {
+    font-size: medium;
+}
+.logosMediosdePago div{
+    width: 40px;
+}
+.logosMediosdePago img{
+    width: 100%;
+    height:auto;
+}
+nav a{
+    font-size: 10px;
+}   
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-buscador h4{ display: none; }
+    .main-buscador input{
+        width: 10px;
+    }
+    }
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes asideImagenesOpacidad{
          from{
